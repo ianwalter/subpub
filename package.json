@@ -1,0 +1,50 @@
+{
+  "name": "@ianwalter/subpub",
+  "version": "0.0.0",
+  "description": "A super-simple JavaScript Subscribe/Publish (pubsub) implementation",
+  "main": "dist/subpub.js",
+  "umd:main": "dist/subpub.umd.js",
+  "module": "dist/subpub.m.js",
+  "scripts": {
+    "build": "microbundle build index.js",
+    "test": "npm run build && jest",
+    "lint": "eslint --ext js index.js tests"
+  },
+  "keywords": [
+    "publish",
+    "subscribe",
+    "pubsub",
+    "subscriptions",
+    "topics",
+    "channels"
+  ],
+  "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "jest": "^23.6.0",
+    "microbundle": "^0.6.0",
+    "np": "^3.0.4"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "jest/globals": true
+    },
+    "extends": [
+      "standard"
+    ],
+    "plugins": [
+      "jest"
+    ]
+  }
+}
