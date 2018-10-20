@@ -1,6 +1,6 @@
 {
   "name": "@ianwalter/subpub",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A super-simple JavaScript Subscribe/Publish (pubsub) implementation",
   "main": "dist/subpub.js",
   "umd:main": "dist/subpub.umd.js",
