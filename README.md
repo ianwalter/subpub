@@ -1,6 +1,11 @@
 # @ianwalter/subpub
 > A super-simple JavaScript Subscribe/Publish (pubsub) implementation
 
+## Installation
+
+```console
+npm install @ianwalter/subpub --save
+```
 
 ## License
 
