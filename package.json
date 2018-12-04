@@ -24,7 +24,7 @@
     "dist"
   ],
   "devDependencies": {
-    "eslint": "^4.19.1",
+    "eslint": "^5.9.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jest": "^21.17.0",
