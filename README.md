@@ -6,7 +6,7 @@
 ## Installation
 
 ```console
-npm install @ianwalter/subpub --save
+yarn add @ianwalter/subpub
 ```
 
 ## License
