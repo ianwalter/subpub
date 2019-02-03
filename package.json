@@ -7,7 +7,9 @@
   "iife": "dist/subpub.iife.js",
   "scripts": {
     "lint": "eslint index.js test.js",
-    "pretest": "dist --babel",
+    "iife": "dist --name Subpub --babel --inline --no-cjs --no-esm",
+    "dist": "dist --babel --no-iife",
+    "pretest": "npm run dist && npm run iife",
     "test": "ava"
   },
   "keywords": [
@@ -23,10 +25,12 @@
   "files": [
     "dist"
   ],
+  "dependencies": {
+    "@babel/runtime": "^7.3.1"
+  },
   "devDependencies": {
-    "@babel/plugin-transform-runtime": "^7.2.0",
-    "@babel/preset-env": "^7.2.3",
-    "@ianwalter/dist": "^1.4.0",
+    "@ianwalter/babel-preset-lib": "^1.0.3",
+    "@ianwalter/dist": "^1.5.1",
     "ava": "^1.1.0",
     "eslint": "^5.10.0",
     "eslint-config-standard": "^12.0.0",
@@ -36,14 +40,12 @@
     "eslint-plugin-standard": "^4.0.0",
     "np": "^4.0.1"
   },
+  "browserslist": [
+    "> 0.5%"
+  ],
   "babel": {
     "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "loose": true
-        }
-      ]
+      "@ianwalter/lib"
     ]
   },
   "eslintConfig": {
