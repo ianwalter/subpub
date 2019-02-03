@@ -1,6 +1,6 @@
 {
   "name": "@ianwalter/subpub",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A super-simple JavaScript Subscribe/Publish (pubsub) implementation",
   "main": "dist/subpub.js",
   "module": "dist/subpub.m.js",
