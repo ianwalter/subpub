@@ -4,12 +4,9 @@
   "description": "A super-simple JavaScript Subscribe/Publish (pubsub) implementation",
   "main": "dist/subpub.js",
   "module": "dist/subpub.m.js",
-  "iife": "dist/subpub.iife.js",
   "scripts": {
     "lint": "eslint index.js test.js",
-    "iife": "dist --name Subpub --babel --inline --no-cjs --no-esm",
-    "dist": "dist --babel --no-iife",
-    "pretest": "npm run dist && npm run iife",
+    "pretest": "dist --babel",
     "test": "ava"
   },
   "keywords": [

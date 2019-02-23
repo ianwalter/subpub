@@ -9,6 +9,17 @@
 yarn add @ianwalter/subpub
 ```
 
+## Usage
+
+```js
+import Subpub from '@ianwalter/subpub'
+
+const sp = new Subpub()
+sp.sub('alerts', msg => console.log(msg))
+
+sp.pub('alerts', 'We ran out of coffee!')
+```
+
 ## License
 
 Apache 2.0 with Commons Clause - See [LICENSE][licenseUrl]
