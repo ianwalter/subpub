@@ -19,9 +19,7 @@ export default class Subpub {
 
   pub (key, data) {
     if (this.topics[key]) {
-      for (let cb of this.topics[key]) {
-        cb(data)
-      }
+      return this.topics[key].map(cb => cb(data))
     } else {
       throw new Error(`Topic ${key} not found`)
     }

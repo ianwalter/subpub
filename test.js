@@ -30,3 +30,15 @@ test('topic deletion works', t => {
     t.pass()
   }
 })
+
+test('async callbacks can be awaited', async t => {
+  const sb = new Subpub()
+
+  let time = new Date().getTime()
+  sb.sub('test', () => new Promise(
+    resolve => setTimeout(() => resolve(new Date().getTime() - time > 99), 100)
+  ))
+
+  const [result] = await Promise.all(sb.pub('test'))
+  t.true(result)
+})
