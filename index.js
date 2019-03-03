@@ -22,16 +22,20 @@ export default class Subpub {
     }
   }
 
-  pub (key, data) {
-    let callbacks
+  getSubs (key) {
     if (this.topics[key]) {
-      callbacks = this.topics[key]
+      return this.topics[key]
     } else if (typeof key === 'object') {
       const matches = this.patterns.find(key)
-      callbacks = Array.isArray(matches) ? matches : [matches]
+      if (matches) {
+        return Array.isArray(matches) ? matches : [matches]
+      }
     }
+  }
 
-    if (callbacks && callbacks.length) {
+  pub (key, data) {
+    const callbacks = this.getSubs(key)
+    if (callbacks) {
       return callbacks.map(callback => callback(data))
     } else {
       throw new Error(`Topic ${key} not found`)
