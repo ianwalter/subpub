@@ -23,10 +23,11 @@
     "dist"
   ],
   "dependencies": {
-    "@babel/runtime": "^7.3.1"
+    "@babel/runtime": "^7.3.1",
+    "patrun": "^1.0.0"
   },
   "devDependencies": {
-    "@ianwalter/babel-preset-lib": "^1.0.3",
+    "@ianwalter/babel-preset-lib": "^1.2.0",
     "@ianwalter/dist": "^3.0.0",
     "ava": "^1.1.0",
     "eslint": "^5.10.0",
