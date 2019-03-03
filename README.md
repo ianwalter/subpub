@@ -14,10 +14,23 @@ yarn add @ianwalter/subpub
 ```js
 import Subpub from '@ianwalter/subpub'
 
+// Create a Subpub instance.
 const sp = new Subpub()
-sp.sub('alerts', msg => console.log(msg))
 
+// Create a subscription to a topic.
+const usubscribe = sp.sub('alerts', msg => console.log(msg))
+
+// Publish a message on the topic.
 sp.pub('alerts', 'We ran out of coffee!')
+
+// Unsubscribe the subscriber from the topic.
+usubscribe()
+
+// Create a subscriber with an object key that can be pattern-matched.
+sp.sub({ key: '1d', name: 'BIBA' }, msg => console.log(msg))
+
+// Send a message to the subscriber using only the key property to match.
+sp.pub({ key: '1d' }, 'Te biba nachdi')
 ```
 
 ## License
