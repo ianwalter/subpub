@@ -15,7 +15,9 @@
     "pubsub",
     "subscriptions",
     "topics",
-    "channels"
+    "channels",
+    "events",
+    "pattern-matching"
   ],
   "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
   "license": "SEE LICENSE IN LICENSE",
