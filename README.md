@@ -27,10 +27,11 @@ sp.pub('alerts', 'We ran out of coffee!')
 usubscribe()
 
 // Create a subscriber with an object key that can be pattern-matched.
-sp.sub({ key: '1d', name: 'BIBA' }, msg => console.log(msg))
+sp.sub({ key: '1d', name: 'BIBA' }, async msg => msg.toUpperCase())
 
-// Send a message to the subscriber using only the key property to match.
-sp.pub({ key: '1d' }, 'Te biba nachdi')
+// Send a message to the subscriber using only the key property to match and
+// wait for the returned promise to resolve with the transformed value.
+await sp.pub({ key: '1d' }, 'Te biba nachdi') // => TE BIBA NACHDI
 ```
 
 ## License
