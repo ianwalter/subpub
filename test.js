@@ -42,3 +42,9 @@ test('async callbacks can be awaited', async t => {
   const [result] = await Promise.all(sb.pub('test'))
   t.true(result)
 })
+
+test.cb('pattern matching on object keys', t => {
+  const sb = new Subpub()
+  sb.sub({ path: '/foo' }, t.end)
+  sb.pub({ name: 'Foo', path: '/foo' })
+})
