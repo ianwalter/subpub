@@ -31,7 +31,7 @@ export default class Subpub {
       callbacks = Array.isArray(matches) ? matches : [matches]
     }
 
-    if (callbacks) {
+    if (callbacks && callbacks.length) {
       return callbacks.map(callback => callback(data))
     } else {
       throw new Error(`Topic ${key} not found`)
