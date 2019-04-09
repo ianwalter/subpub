@@ -7,7 +7,7 @@
   "scripts": {
     "lint": "eslint index.js test.js",
     "pretest": "dist --babel",
-    "test": "ava"
+    "test": "bff"
   },
   "keywords": [
     "publish",
@@ -30,9 +30,9 @@
   },
   "devDependencies": {
     "@ianwalter/babel-preset-lib": "^1.2.0",
+    "@ianwalter/bff": "^2.1.0",
     "@ianwalter/dist": "^3.0.0",
     "@ianwalter/eslint-config": "^1.0.0",
-    "ava": "^1.1.0",
     "np": "^4.0.1"
   },
   "browserslist": [
@@ -46,7 +46,7 @@
   "eslintConfig": {
     "root": true,
     "extends": [
-      "@ianwalter/eslint-config"
+      "@ianwalter"
     ]
   }
 }
