@@ -691,9 +691,9 @@
     "@babel/preset-env" "^7.3.1"
 
 "@ianwalter/bff@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-2.1.0.tgz#24e1e0b87790bb1fc68b14ab8a38806c8ac3b083"
-  integrity sha512-9pjkMHBTi8NMh6Ofd1gF0ERp9g1bZjr6uVLkoemNT/iNTd2z05M6n4iUil3Th09diLIu08DQGbHM5LAdy254Kg==
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-2.3.0.tgz#e07c2bf97b78eaeb8f8b175b0672087895477a0c"
+  integrity sha512-5DDlLmvU4mO3S6ACMkjY010czpOxqDCx93ofopzSP2fzLkWGTWpQxuWMAlObehQQHTHTZby15Z+Owsbs5QpJaQ==
   dependencies:
     "@ianwalter/print" "^2.0.2"
     common-tags "^1.8.0"
