@@ -717,16 +717,16 @@
     yargs "^13.2.2"
 
 "@ianwalter/dist@^3.0.0":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@ianwalter/dist/-/dist-3.0.1.tgz#d453e6d60c8af145183fdd7bd695b791f0a98410"
-  integrity sha512-tvanKMOlKgElT7FJBuTiFazgSdF9M8JoIEQdY9m9lNDMMCszWNzq45AHEN1rwm8YMeSiOz9zX9psgLXtbcrsVQ==
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/dist/-/dist-3.1.0.tgz#8fe46c9980fa270f236db8ff7fbd89948e90b7d2"
+  integrity sha512-YTL1jwVlth4vk/CbfxS1B/rA3KFTeHttzR/fWXcVF3Khp+61PyooZ/Z7kWAG4UWwkMqkSH6XHHHFxZhunyqIMA==
   dependencies:
     "@babel/core" "^7.4.0"
     "@ianwalter/npm-short-name" "^1.0.0"
+    "@ianwalter/print" "^2.3.0"
     "@ianwalter/promise-complete" "^3.0.1"
     "@ianwalter/rollup-plugin-hashbang" "^1.0.1"
     builtin-modules "^3.0.0"
-    chalk "^2.4.2"
     meow "^5.0.0"
     pify "^4.0.1"
     read-pkg-up "^5.0.0"
@@ -734,7 +734,7 @@
     rollup "^1.7.4"
     rollup-plugin-babel "^4.3.2"
     rollup-plugin-commonjs "^9.2.2"
-    rollup-plugin-json "^3.1.0"
+    rollup-plugin-json "^4.0.0"
     rollup-plugin-node-resolve "^4.0.1"
 
 "@ianwalter/eslint-config@^1.0.0":
@@ -3942,11 +3942,12 @@ rollup-plugin-commonjs@^9.2.2:
     resolve "^1.10.0"
     rollup-pluginutils "^2.5.0"
 
-rollup-plugin-json@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-json/-/rollup-plugin-json-3.1.0.tgz#7c1daf60c46bc21021ea016bd00863561a03321b"
+rollup-plugin-json@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-json/-/rollup-plugin-json-4.0.0.tgz#a18da0a4b30bf5ca1ee76ddb1422afbb84ae2b9e"
+  integrity sha512-hgb8N7Cgfw5SZAkb3jf0QXii6QX/FOkiIq2M7BAQIEydjHvTyxXHQiIzZaTFgx1GK0cRCHOCBHIyEkkLdWKxow==
   dependencies:
-    rollup-pluginutils "^2.3.1"
+    rollup-pluginutils "^2.5.0"
 
 rollup-plugin-node-resolve@^4.0.1:
   version "4.0.1"
@@ -3957,7 +3958,7 @@ rollup-plugin-node-resolve@^4.0.1:
     is-module "^1.0.0"
     resolve "^1.10.0"
 
-rollup-pluginutils@^2.3.0, rollup-pluginutils@^2.3.1:
+rollup-pluginutils@^2.3.0:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/rollup-pluginutils/-/rollup-pluginutils-2.3.3.tgz#3aad9b1eb3e7fe8262820818840bf091e5ae6794"
   dependencies:
