@@ -6,7 +6,7 @@
   "module": "dist/subpub.m.js",
   "scripts": {
     "lint": "eslint .",
-    "pretest": "dist --babel",
+    "pretest": "dist",
     "test": "bff"
   },
   "keywords": [
@@ -25,11 +25,9 @@
     "dist"
   ],
   "dependencies": {
-    "@babel/runtime": "^7.3.1",
     "patrun": "^1.0.0"
   },
   "devDependencies": {
-    "@ianwalter/babel-preset-lib": "^2.0.2",
     "@ianwalter/eslint-config": "^4.0.0",
     "@ianwalter/bff": "^9.6.0",
     "@ianwalter/dist": "^5.3.0",
@@ -39,11 +37,6 @@
   "browserslist": [
     "> 0.5%"
   ],
-  "babel": {
-    "presets": [
-      "@ianwalter/lib"
-    ]
-  },
   "eslintConfig": {
     "root": true,
     "extends": [
