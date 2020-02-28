@@ -5,7 +5,7 @@
   "main": "dist/subpub.js",
   "module": "dist/subpub.m.js",
   "scripts": {
-    "lint": "eslint index.js tests.js",
+    "lint": "eslint .",
     "pretest": "dist --babel",
     "test": "bff"
   },
@@ -50,6 +50,9 @@
       "@ianwalter"
     ]
   },
+  "eslintIgnore": [
+    "dist"
+  ],
   "renovate": {
     "extends": [
       "@ianwalter"
