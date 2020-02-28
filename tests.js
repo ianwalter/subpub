@@ -25,7 +25,7 @@ test('topic deletion works', ({ expect, fail }) => {
 test('async callbacks can be awaited', async ({ expect }) => {
   const sb = new Subpub()
 
-  let time = new Date().getTime()
+  const time = new Date().getTime()
   sb.sub('test', () => new Promise(
     resolve => setTimeout(() => resolve(new Date().getTime() - time > 99), 100)
   ))
