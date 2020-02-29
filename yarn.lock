@@ -1962,6 +1962,11 @@ gex@0.3:
   dependencies:
     lodash "4.17"
 
+gex@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gex/-/gex-1.0.0.tgz#99acfe13de9987e8a0bebc8f72a5ef491c5ad231"
+  integrity sha512-wEyZcD4WWlL8IMw/ZOhWGfy4X/Q2yFqXZ16Loq/vh3XwsS+42Fm23Jd5ph+3yw9wNzVMmloskBwO3vCL8M7+2Q==
+
 github-url-from-git@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/github-url-from-git/-/github-url-from-git-1.5.0.tgz#f985fedcc0a9aa579dc88d7aff068d55cc6251a0"
@@ -3644,6 +3649,13 @@ patrun@^1.0.0:
   dependencies:
     gex "0.3"
     lodash "4.17"
+
+patrun@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/patrun/-/patrun-3.0.0.tgz#b4f5900ecea71b50a20b8d4e4a5ad31602e0ac99"
+  integrity sha512-fQ++l3FCnrQbO03wEjb2SFn+ixGXscS8948A4js0qDTBsod0eElYUDvuWCH4mV61V/7QN2lCtryRvoyBP0K/7g==
+  dependencies:
+    gex "^1.0.0"
 
 picomatch@^2.0.4, picomatch@^2.0.5, picomatch@^2.2.1:
   version "2.2.1"
