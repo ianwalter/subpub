@@ -31,7 +31,7 @@
     "@ianwalter/eslint-config": "^4.0.0",
     "@ianwalter/bff": "^9.8.0",
     "@ianwalter/dist": "^6.0.0",
-    "@ianwalter/renovate-config": "^1.2.0",
+    "@ianwalter/renovate-config": "^1.3.0",
     "np": "^6.2.0"
   },
   "browserslist": [
