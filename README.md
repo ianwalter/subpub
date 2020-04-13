@@ -12,7 +12,7 @@ yarn add @ianwalter/subpub
 ## Usage
 
 ```js
-import Subpub from '@ianwalter/subpub'
+import { Subpub } from '@ianwalter/subpub'
 
 // Create a Subpub instance.
 const sp = new Subpub()
@@ -40,7 +40,7 @@ Apache 2.0 with Commons Clause - See [LICENSE][licenseUrl]
 
 &nbsp;
 
-Created by [Ian Walter](https://iankwalter.com)
+Created by [Ian Walter](https://ianwalter.dev)
 
 [npmImage]: https://img.shields.io/npm/v/@ianwalter/subpub.svg
 [npmUrl]: https://www.npmjs.com/package/@ianwalter/subpub

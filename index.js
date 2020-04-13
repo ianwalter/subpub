@@ -1,6 +1,6 @@
 import patrun from 'patrun'
 
-export default class Subpub {
+class Subpub {
   constructor () {
     this.all = []
     this.topics = {}
@@ -65,3 +65,7 @@ export default class Subpub {
     }
   }
 }
+
+const subpub = new Subpub()
+
+export { Subpub, subpub }

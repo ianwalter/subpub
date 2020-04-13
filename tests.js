@@ -1,5 +1,5 @@
 const { test } = require('@ianwalter/bff')
-const Subpub = require('.')
+const { Subpub } = require('.')
 
 test('subscribe/publish works', ({ expect }) => {
   const sb = new Subpub()
