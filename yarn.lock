@@ -2629,6 +2629,13 @@ patrun@^3.0.0:
   dependencies:
     gex "^1.0.0"
 
+patrun@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/patrun/-/patrun-4.0.0.tgz#41d65085712c0fd2468c60a64c6273232a4e0242"
+  integrity sha512-T+YuxuG7IKvOi4276DBNAFaAOEdeY5qjRs3sQ0owM45SFVFz14DTAjfE9J4Q/aUHlTw638/1B8k7tBo/dWTb3A==
+  dependencies:
+    gex "^1.0.0"
+
 picomatch@^2.0.5, picomatch@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.2.1.tgz#21bac888b6ed8601f831ce7816e335bc779f0a4a"
