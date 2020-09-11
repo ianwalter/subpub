@@ -28,7 +28,7 @@
     "dist"
   ],
   "dependencies": {
-    "patrun": "^3.0.0"
+    "patrun": "^5.0.0"
   },
   "devDependencies": {
     "@ianwalter/bff": "^9.9.1",
