@@ -1681,6 +1681,11 @@ gex@^1.0.0:
   resolved "https://registry.yarnpkg.com/gex/-/gex-1.0.0.tgz#99acfe13de9987e8a0bebc8f72a5ef491c5ad231"
   integrity sha512-wEyZcD4WWlL8IMw/ZOhWGfy4X/Q2yFqXZ16Loq/vh3XwsS+42Fm23Jd5ph+3yw9wNzVMmloskBwO3vCL8M7+2Q==
 
+gex@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/gex/-/gex-2.1.0.tgz#29ac23d397288a3cefd38895adb113fda14c285b"
+  integrity sha512-i5Mv38sDFotX2fYapMZMOQbVqrn5l6avoqEL2oWKJlpfaw4tlfNrWy+V9ns4HAq7b/ab42/p117HMKsXmoycHA==
+
 glob-parent@^5.0.0, glob-parent@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-5.1.0.tgz#5f4c1d1e748d30cd73ad2944b3577a81b081e8c2"
@@ -2693,6 +2698,13 @@ patrun@^3.0.0:
   integrity sha512-fQ++l3FCnrQbO03wEjb2SFn+ixGXscS8948A4js0qDTBsod0eElYUDvuWCH4mV61V/7QN2lCtryRvoyBP0K/7g==
   dependencies:
     gex "^1.0.0"
+
+patrun@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/patrun/-/patrun-6.0.1.tgz#119e220f7b8adc3bba537f317ff552ca935736ed"
+  integrity sha512-PS7BHUZ59VzLEEyJYqSAf5OsE65eyaqQUkLJ8GOIwXLNhkLfMVWOmjaDcnCvgmR405Iw8USV/rYGmRkkA9SKWg==
+  dependencies:
+    gex "^2.1.0"
 
 picomatch@^2.0.5, picomatch@^2.2.1:
   version "2.2.1"
